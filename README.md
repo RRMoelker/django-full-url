@@ -3,6 +3,14 @@ django-full-url
 
 Getting specific parts of an URL for the current page in Django can be quite tedious. This small package makes it easy to get parts of the URL by providing python helpers and a context processor. All the information is gathered from a RequestContext object, no error prone 'Site' config needed!
 
+Some of the URL parts you can extract:
+
+* domain
+* http or https
+* port
+* path
+* query (get parameters)
+
 There are some situations where you might want to get specific URL parts:
 
 * Add the domain name for including images on your domain in an email.
@@ -12,9 +20,11 @@ There are some situations where you might want to get specific URL parts:
 ## Installation
 
 Either install directly:
+
 `pip install -e git+git@github.com:RRMoelker/django-full-url.git#egg=full_url`
 
 Or add the following line to your requirements file:
+
 `-e git+git@github.com:RRMoelker/django-full-url.git#egg=full_url`
 
 
