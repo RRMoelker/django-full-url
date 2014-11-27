@@ -74,3 +74,12 @@ During normal operations a browser should never send this information so no func
 
 ## Requirements
 Django
+
+## Uninstall
+Nothing fancy here:
+
+```
+pip uninstall django-full-url
+```
+
+Encountered a bug or missing a feature? Please do leave create a ticket to help improve this tool!
