@@ -12,7 +12,7 @@ setup(
     packages=['full_url'],
     include_package_data=True,
     license='',
-    description='Small tools for easily getting parts or full URL in Django templates and views.',
+    description='Small tool for easily getting parts or full URL in Django templates and views.',
     long_description=README,
     url='',
     author='R. Moelker',
