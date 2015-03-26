@@ -30,26 +30,30 @@ Or add the following line to your requirements file:
 
 ## Usage
 
-There are currently two ways to get the URL information. One method uses a context processor to make the different URL parts data available in all templates. The second method provides helpers to get the information directly from within a view or another place where you have access to a RequestObject in the python code. For available parameters see [RequestGrabber](#grabber)
+There are currently two ways to get the URL information. One method uses a context processor to make the different URL parts data available in all [templates](#context-processor). The second method provides helpers to get the information directly from within a view or another place where you have access to a RequestObject in the [python code](#python-code). For available parameters see [RequestGrabber](#grabber)
 
-### Context processor
+### <a href="context-processor"></a>Context processor
 
 You can add a context processor that will add the variable `url_parts` to all templates.
 The processor can be added anywhere in the `TEMPLATE_CONTEXT_PROCESSORS` list:
 
+```
 TEMPLATE_CONTEXT_PROCESSORS = (
   # ...
   'full_url.context_processors.UrlParts',
   # ...
 )
-
-The `url_parts` variable is a [RequestGrabber](#grabber) object. To insert a part in the template use
 ```
+
+The `url_parts` variable is a [RequestGrabber](#grabber) object. To actually insert part of the url into the template you can do:
+```
+...
 {{url_parts.domain}}
+...
 ```
 
 
-### Python code
+### <a href="#python-code"></a>Python code
 
 To get URL information in python use the [RequestGrabber](#grabber).
 ```
@@ -84,6 +88,7 @@ During normal operations a browser should never send this information so no func
 
 ## Requirements
 Django
+(Tested with Django 1.6, not known if it works in other versions. Please let us know if it works in more setups)
 
 ## Uninstall
 Nothing fancy here:
@@ -92,4 +97,4 @@ Nothing fancy here:
 pip uninstall django-full-url
 ```
 
-Encountered a bug or missing a feature? Please do leave create a ticket to help improve this tool!
+Encountered a bug or missing a feature? Please do create a ticket to help improve this tool!
