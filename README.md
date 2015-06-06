@@ -88,7 +88,7 @@ During normal operations a browser should never send this information so no func
 
 ## Requirements
 Django
-(Tested with Django 1.6, not known if it works in other versions. Please let us know if it works in more setups)
+(Tested with Django 1.6 and 1.7. Please let me know if it works in other versions setups)
 
 ## Uninstall
 Nothing fancy here:
@@ -97,4 +97,4 @@ Nothing fancy here:
 pip uninstall django-full-url
 ```
 
-Encountered a bug or missing a feature? Please do create a ticket to help improve this tool!
+Encountered a bug or missing a feature? Please create a ticket to help improve this tool!
