@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from grabber import RequestGrabber
+from __future__ import absolute_import
+from .grabber import RequestGrabber
 
 def UrlParts(request):
 	"""
