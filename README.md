@@ -21,11 +21,11 @@ There are some situations where you might want to get specific URL parts:
 
 Either install directly:
 
-`pip install -e git+git@github.com:RRMoelker/django-full-url.git#egg=full_url`
+`pip install -e git+https://github.com/RRMoelker/django-full-url.git#egg=django-full-url`
 
 Or add the following line to your requirements file:
 
-`-e git+git@github.com:RRMoelker/django-full-url.git#egg=full_url`
+`-e git+https://github.com/RRMoelker/django-full-url.git#egg=django_full_url`
 
 
 ## Usage
